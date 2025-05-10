@@ -1,0 +1,42 @@
+.dark-mode {
+    --sidebar-bg: #1e1e2d;
+    --sidebar-active: #2d2d42;
+    --header-bg: #2d2d42;
+    --content-bg: #1e1e2d;
+    --card-bg: #2d2d42;
+    --text-color: #b4b7bd;
+    --text-dark: #d0d2d6;
+    --border-color: #3b3b4d;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e2f;
+    color: #f0f0f0;
+}
+body.dark-mode table {
+    background-color: #2b2b3c;
+    color: #f0f0f0;
+}
+body.dark-mode .table th,
+body.dark-mode .table td {
+    background-color: #2b2b3c;
+    color: #f0f0f0;
+    border-color: #444;
+}
+body.dark-mode .table-hover tbody tr:hover {
+    background-color: #3a3a4d;
+}
+body.dark-mode .form-select,
+body.dark-mode .page-link {
+    background-color: #333;
+    color: #f0f0f0;
+    border-color: #444;
+}
+body.dark-mode .login-btn {
+    outline: solid white 1px;
+    color: #fff;
+}
+body.dark-mode .login-btn:hover {
+    background-color: #fff;
+    color: rgb(17, 17, 17);
+}

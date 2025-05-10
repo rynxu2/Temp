@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/dark_mode.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <!-- <div class="preloader">
+        <div class="loader">
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+        </div>
+    </div> -->
+
+    <!-- Wrapper -->
+    <div class="wrapper d-flex">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <div class="brand">
+                    <div class="logo-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span>Course</span>
+                        <small>ADMIN PANEL</small>
+                    </div>
+                </div>
+                <button class="btn btn-close-sidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="sidebar-profile">
+                <div class="profile-info">
+                    <h6>Sarah Johnson</h6>
+                </div>
+            </div>
+            <div class="sidebar-search">
+                <div class="input-group">
+                    <input type="text" class="form-control" data-i18n-placeholder="search" placeholder="Tìm kiếm...">
+                    <button class="btn" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active">
+                    <a href="#">
+                        <span class="menu-icon"><i class="fas fa-users"></i></span>
+                        <span data-i18n="users" class="menu-text">Quản lý người dùng</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./course.html">
+                        <span class="menu-icon"><i class="fas fa-book"></i></span>
+                        <span data-i18n="course" class="menu-text">Quản lý khóa học</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <button data-i18n="darkMode" class="btn btn-dark-mode">
+                    <i class="fas fa-moon"></i> Chế độ tối
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main">
+            <!-- Header -->
+            <header class="header">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <button class="btn btn-toggle-sidebar">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <div class="breadcrumb">
+                                <a data-i18n="users" href="#"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="header-right">
+                                <div class="language-switcher">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="languageDropdown"
+                                            data-bs-toggle="dropdown">
+                                            <img src="https://flagcdn.com/w20/vn.png" class="language-flag"
+                                                alt="Vietnamese">
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item language-item active" href="#" data-lang="vi">
+                                                    <img src="https://flagcdn.com/w20/vn.png" class="language-flag"
+                                                        alt="Vietnamese">
+                                                    <span>Tiếng Việt</span>
+                                                </a></li>
+                                            <li><a class="dropdown-item language-item" href="#" data-lang="en">
+                                                    <img src="https://flagcdn.com/w20/us.png" class="language-flag"
+                                                        alt="English">
+                                                    <span>English</span>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="auth-buttons not-logged-in">
+                                    <a href="#" data-i18n="login" class="btn login-btn me-2">Đăng
+                                        nhập</a>
+                                    <a href="#" data-i18n="register" class="btn btn-primary">Đăng ký</a>
+                                </div>
+
+                                <div class="logged-in-user d-none">
+                                    <div class="dropdown profile-dropdown">
+                                        <button class="btn" type="button" data-bs-toggle="dropdown">
+                                            <span></span>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-end">
+                                            <button type="button" data-i18n="logout" class="dropdown-item btn-logout">
+                                                <i class="fas fa-sign-out-alt"></i> Đăng xuất
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <main class="content">
+                <div class="container-fluid">
+                    <div class="page-header">
+                        <h1 data-i18n="users"></h1>
+                        <p data-i18n="user_title"></p>
+                    </div>
+
+                    <!-- Summary Cards -->
+                    <div class="row">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                              <div class="col-md-6">
+                                <div class="search-container">
+                                  <input type="text" class="form-control search-input" id="search_input" placeholder="Search...">
+                                  <i class="fas fa-search search-icon"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 data-i18n="list_user"></h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th data-i18n="user_id">Mã người dùng</th>
+                                                <th data-i18n="user_name">Họ tên</th>
+                                                <th>Email</th>
+                                                <th data-i18n="user_createat">Ngày tạo</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>#ORD-2023-001</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                                                            class="avatar-sm" alt="">
+                                                        <span class="ms-2">Nguyễn Văn A</span>
+                                                    </div>
+                                                </td>
+                                                <td>15/06/2023</td>
+                                                <td>$1,250</td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-icon">
+                                                        <i class="fas fa-ellipsis-v"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>#ORD-2023-002</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="https://randomuser.me/api/portraits/women/44.jpg"
+                                                            class="avatar-sm" alt="">
+                                                        <span class="ms-2">Trần Thị B</span>
+                                                    </div>
+                                                </td>
+                                                <td>14/06/2023</td>
+                                                <td>$890</td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-icon">
+                                                        <i class="fas fa-ellipsis-v"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>#ORD-2023-003</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="https://randomuser.me/api/portraits/men/75.jpg"
+                                                            class="avatar-sm" alt="">
+                                                        <span class="ms-2">Lê Văn C</span>
+                                                    </div>
+                                                </td>
+                                                <td>13/06/2023</td>
+                                                <td>$2,450</td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-icon">
+                                                        <i class="fas fa-ellipsis-v"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>#ORD-2023-004</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="https://randomuser.me/api/portraits/women/63.jpg"
+                                                            class="avatar-sm" alt="">
+                                                        <span class="ms-2">Phạm Thị D</span>
+                                                    </div>
+                                                </td>
+                                                <td>12/06/2023</td>
+                                                <td>$1,750</td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-icon">
+                                                        <i class="fas fa-ellipsis-v"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; 2025 <strong>Course Admin</strong></p>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <ul class="footer-links">
+                                <li><a href="#">Hỗ trợ</a></li>
+                                <li><a href="#">Bảo mật</a></li>
+                                <li><a href="#">Điều khoản</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+        </script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <!-- <script src="./assets/js/product.js"></script> -->
+    <script src="./assets/js/multi_language.js"></script>
+</body>
+
+</html>
